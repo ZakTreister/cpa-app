@@ -1,0 +1,21 @@
+<div class="container">
+  <h1 class="text-center">
+    Our services
+  </h1>
+  <div *ngFor="let service of services" class="container py-3">
+    <div class="card">
+      <div class="row ">
+        <div class="col-md-4">
+          <img src="{{service.src}}" class="w-100">
+        </div>
+        <div class="col-md-8 px-3">
+          <div class="card-block px-3">
+            <h4 class="card-title"> {{service.title}}</h4>
+            <p class="card-text">{{service.text}} </p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

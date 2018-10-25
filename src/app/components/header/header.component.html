@@ -1,0 +1,23 @@
+<header class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <h1 class="navbar-brand">
+      <a class="nav-link" routerLink="home">
+        CPA Yitz
+      </a>
+    </h1>
+    <button class="navbar-toggler btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+      aria-controls="navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
+      <ul class="navbar-nav  ml-auto  float-lg-right">
+        <div *ngFor="let item of navbarItems">
+          <li class="nav-item" routerLinkActive="active"><a class=" nav-link" routerLink="{{item.link}}">{{item.label}}</a></li>
+        </div>
+      </ul>
+
+    </div>
+  </nav>
+  <!-- <hr> -->
+</header>

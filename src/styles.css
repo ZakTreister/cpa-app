@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background: url(./assets/background.jpeg);
+    background-size: cover;
+    background-color: #ccc;
+    background-blend-mode: screen;
+}
