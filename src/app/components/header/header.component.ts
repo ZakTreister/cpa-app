@@ -8,12 +8,13 @@ import { navbarItems } from '../../shared/navbar';
 })
 export class HeaderComponent implements OnInit {
 
-  isCollapsed = false;
+  isCollapsed: boolean;
   navbarItems: any;
   constructor() { }
 
   ngOnInit() {
     this.navbarItems = navbarItems;
+    this.isCollapsed = false;
   }
 
 }
