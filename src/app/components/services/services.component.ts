@@ -7,11 +7,11 @@ import { services } from '../../shared/services';
   styleUrls: ['./services.component.css']
 })
 export class ServicesComponent implements OnInit {
-  services: any;
+  title: string = services.title;
+  services: Array<any> = services.services;
   constructor() { }
 
   ngOnInit() {
-    this.services = services;
   }
 
 }

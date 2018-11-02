@@ -1,16 +1,10 @@
 <div class="container">
   <h1 class="text-center">
-    Credentials
+    {{about.title}}
   </h1>
   <ul>
-    <li>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </li>
-    <li>
-      Beatae qui consequatur laboriosam odit possimus velit minus et,
-    </li>
-    <li>
-      reprehenderit debitis dolorem! Odit neque corrupti vitae eaque qui, doloremque nemo possimus quisquam?
+    <li *ngFor="let item of about.text">
+      {{item}}
     </li>
   </ul>
 </div>
